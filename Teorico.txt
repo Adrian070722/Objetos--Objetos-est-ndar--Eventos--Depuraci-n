@@ -1,0 +1,156 @@
+                                                  Objetos, Objetos estándar, Eventos, Depuración
+
+
+
+
+
+1) Explica qué son los objetos en JavaScript y cómo se crean.
+
+
+Los objetos en JavaScript son estructuras que agrupan datos relacionados y funcionalidades bajo una única entidad. 
+Se componen de:
+
+Propiedades: Pares clave-valor que almacenan información (por ejemplo, nombre: "Daniel", edad: 20).
+
+Métodos: Funciones asociadas al objeto que realizan acciones (por ejemplo, hablar(), arrancar() ).
+
+
+cómo se crean?
+
+1. Notación literal:
+
+Es la forma más común y sencilla de crear objetos. Se utiliza un par de llaves {} para definir las propiedades y sus valores, separando cada par con una coma.
+
+
+2. Constructor new Object():
+
+Este método crea un objeto vacío y luego se le asignan las propiedades y métodos deseados.
+
+
+
+
+2)Describe los objetos estándar de JavaScript y proporciona ejemplos de su uso.
+
+
+Los objetos estándar son objetos predefinidos en el lenguaje JavaScript que proporcionan
+funcionalidades básicas y comunes para el desarrollo web. Algunos de los más utilizados son:
+
+
+1. Object:
+
+Representa un objeto genérico.
+Métodos útiles:
+create(): Crea un nuevo objeto vacío.
+defineProperty(): Define una nueva propiedad en un objeto.
+freeze(): Previene que las propiedades de un objeto sean modificadas.
+getPrototypeOf(): Obtiene el prototipo de un objeto.
+
+EJEMPLO:
+const persona = Object.create(null);
+persona.nombre = "Juan";
+persona.edad = 30;
+console.log(persona); // Muestra el objeto persona
+
+
+
+2. Array:
+
+Almacena una colección ordenada de valores.
+Métodos útiles:
+push(): Agrega un nuevo elemento al final del array.
+pop(): Elimina el último elemento del array y lo devuelve.
+shift(): Elimina el primer elemento del array y lo devuelve.
+unshift(): Agrega un nuevo elemento al inicio del array.
+sort(): Ordena los elementos del array.
+forEach(): Ejecuta una función para cada elemento del array.
+
+EJEMPLO:
+
+const numeros = [1, 5, 3, 4, 2];
+numeros.sort(); // Ordena los números
+console.log(numeros); // Muestra el array ordenado
+
+
+
+3. Date:
+
+Representa una fecha y hora específica.
+Métodos útiles:
+getFullYear(): Obtiene el año de la fecha.
+getMonth(): Obtiene el mes de la fecha (0-11).
+getDate(): Obtiene el día del mes de la fecha.
+getHours(): Obtiene la hora de la fecha.
+getMinutes(): Obtiene los minutos de la fecha.
+getSeconds(): Obtiene los segundos de la fecha.
+toString(): Convierte la fecha a una cadena de texto.
+
+EJEMPLO:
+
+const fechaActual = new Date();
+
+console.log(fechaActual) // Muestra la fecha actual
+
+
+
+4. String:
+
+Representa una cadena de caracteres de texto.
+Métodos útiles:
+charAt(): Obtiene el caracter en una posición específica de la cadena.
+charCodeAt(): Obtiene el código Unicode del caracter en una posición específica.
+toUpperCase(): Convierte la cadena a mayúsculas.
+toLowerCase(): Convierte la cadena a minúsculas.
+trim(): Elimina los espacios en blanco al inicio y final de la cadena.
+split(): Divide la cadena en un array de subcadenas.
+
+EJEMPLO:
+
+const frase = "Hola, mundo!";
+console.log(frase.toUpperCase()); // Muestra la frase en mayúsculas
+console.log(frase.split(" ")); // Divide la frase en un array de palabras
+
+
+
+5. Math:
+
+Proporciona constantes y funciones matemáticas.
+Constantes útiles:
+PI: Valor de pi (π).
+E: Base de los logaritmos naturales (e).
+Funciones útiles:
+abs(): Valor absoluto de un número.
+pow(): Eleva un número a una potencia.
+sqrt(): Raíz cuadrada de un número.
+floor(): Redondea un número hacia abajo al entero más cercano.
+ceil(): Redondea un número hacia arriba al entero más cercano.
+random(): Genera un número aleatorio entre 0 y 1.
+
+Ejemplo:
+
+const radio = 5;
+const areaCirculo = Math.PI * Math.pow(radio, 2);
+console.log("Área del círculo:", areaCirculo); // Calcula y muestra el área del círculo
+
+
+
+
+3) Explica cómo se realiza la depuración de código JavaScript utilizando las herramientas del
+   navegador.
+
+
+Pasos básicos para la depuración:
+
+Abrir las herramientas de desarrollo: Utiliza el atajo de teclado o el menú del navegador.
+Localizar el panel de depuración: Busca la pestaña "Fuentes" o "Scripts".
+Cargar el código a depurar: Selecciona el archivo JavaScript que deseas depurar.
+Establecer puntos de interrupción: Haz clic en la línea de código donde deseas detener la ejecución.
+Ejecutar el código paso a paso: Utiliza los botones de control de ejecución (reproducir, pausa, avance por pasos, etc.).
+Inspeccionar variables y valores: Examina el contenido de las variables y expresiones en el momento actual.
+Modificar el código: Realiza cambios en el código mientras se depura (solo en algunos casos).
+Volver a ejecutar el código: Una vez realizados los cambios, reanuda la ejecución para ver los resultados.
+
+
+
+
+
+
